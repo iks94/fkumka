@@ -1,0 +1,125 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background: #edeff4;
+}
+
+.wrapper {
+    padding-left: 4px;
+    padding-right: 4px;
+    background: #edeff4;
+    height: 500px;
+}
+
+.logo {
+    background: #9a9da2;
+}
+
+nav a{
+    background: gray;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.slika-naslovna-img {
+    width: 100%;
+}
+
+.vest  {
+    color: white;
+    text-align: center;
+    height: 35vw;
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    z-index: 0;
+    position: relative;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    border-radius: 3%;
+    
+}
+
+.vest1slika {
+    display:block;
+    width: 60vw;
+    height: 35vw;
+    object-fit:cover;
+    z-index:0;
+    filter: grayscale(60%);
+    transition: 0.5s;
+    border-radius: 3%;
+}
+
+.vest-central {
+    position: absolute;
+    top:17vw;
+    left:0;
+    z-index: 1;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+.vest1naslov {
+    margin:0;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    z-index: 10;
+
+}
+
+
+
+.vest-decoration {
+    font-weight: bold;
+}
+
+.vest-decoration img {
+    
+    width: 5vw;
+    height: 5vw;
+    top: 1.5vw;
+    position: relative;
+}
+
+.vest-decoration p{
+    color: white;
+    display: inline-block;
+}
+
+.vest1slika:hover{
+    filter: none;
+    position: relative;
+    z-index: 1;
+}
+
+.vest1naslov:hover{
+    transform: scale(1.02);
+    position: relative;
+    z-index: 1;
+}
+.vest:hover .vest1slika{
+    filter:none;
+    transform: scale(1.02);
+}
