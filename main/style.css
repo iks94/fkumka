@@ -2,6 +2,7 @@ body{
     font-family: "Montserrat", sans-serif;
     margin: 0;
     background: #edeff4;
+    font-family: "Montserrat", sans-serif;
 }
 
 .wrapper {
@@ -12,8 +13,39 @@ body{
 }
 
 .logo {
-    background: #9a9da2;
+    background: #808080;
+    height: 40px;
 }
+
+.social {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 40px;
+}
+
+.facebook {
+    display: inline-block;
+    position: relative;
+}
+
+.facebook img {
+    width: 15px;
+    height: 15px;
+}
+
+.instagram {
+    display: inline-block;
+    position: relative;
+}
+
+.instagram img {
+    width: 15px;
+    height: 15px;
+}
+
+
 
 nav a{
     background: gray;
@@ -23,18 +55,22 @@ nav a{
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid white;
+    font-weight: bold;
 }
 
-.logo img {
-    width: 100px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.slika-logo {
+    width: 95px;
+    height: 90px;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
 }
+
+
 
 .slika-naslovna-img {
     width: 100%;
+    filter: grayscale(40%);
 }
 
 .vest  {
@@ -67,7 +103,7 @@ nav a{
 
 .vest-central {
     position: absolute;
-    top:17vw;
+    top:13vw;
     left:0;
     z-index: 1;
 }
@@ -122,4 +158,153 @@ a {
 .vest:hover .vest1slika{
     filter:none;
     transform: scale(1.02);
+}
+
+.igraci {
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 12px;
+    border-top: 1px solid gray;
+    padding-top: 5vw;
+    text-align: center;
+}
+
+.igraci  a img {
+    width: 55vw;
+    height: 25vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.igraci h1 {
+    color: gray;
+    position: relative;
+    bottom: 3vw;
+    font-size: 3vw;
+}
+
+.igraci a img:hover{
+    transform: scale(1.02);
+    position: relative;
+    z-index: 1;
+}
+
+.video {
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 12px;
+    border-top: 1px solid gray;
+    padding-top: 5vw;
+    text-align: center;
+    
+}
+
+.video a img {
+    width: 20vw;
+    height: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.video h1 {
+    color: gray;
+    position: relative;
+    bottom: 3vw;
+    font-size: 3vw;
+}
+
+.video a img:hover{
+    transform: scale(1.02);
+    position: relative;
+    z-index: 1;
+}
+
+.table {
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    z-index: 0;
+    position: relative;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 12px;
+    border-top: 1px solid gray;
+    padding-top: 5vw;
+}
+
+
+
+
+.table table {
+    width: 100%;
+    text-align: center;
+    border-radius:6px;
+    -moz-border-radius:6px;
+}
+
+.logo-table {
+    display: inline-block;
+
+
+}
+
+.logo-table img {
+    width: 24px;
+    height: 24px;
+}
+
+.ime-table {
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+}
+
+.naziv-tima {
+    text-align: left;
+}
+
+.odd {
+    background: #cecece;
+}
+
+.even {
+    background:#e2e2e2;
+}
+
+.first {
+    background: #9ec8e8;
+}
+thead {
+    background: #808080;
+    color: white;
+}
+
+thead th:first-child {
+    border-radius: 10px 0 0 0;
+}
+thead th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+tbody tr:last-child th:last-child {
+    border-radius: 0 0 10px 0;
 }
