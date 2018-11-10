@@ -14,35 +14,45 @@ body{
 
 .logo {
     background: #808080;
-    height: 40px;
+    height: 70px;
+}
+
+#burger {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin: 20px;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
 }
 
 .social {
-    display: inline-block;
-    position: absolute;
-    top: 3px;
-    right: 0;
-    width: 40px;
+    float: right;
+    margin: 3px;
 }
 
 .facebook {
     display: inline-block;
-    position: relative;
 }
 
 .facebook img {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .instagram {
     display: inline-block;
-    position: relative;
 }
 
 .instagram img {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -53,17 +63,19 @@ nav a{
     text-decoration: none;
     display: block;
     padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid white;
+    
+    border-bottom: 1px solid #cecece;
     font-weight: bold;
 }
 
 .slika-logo {
-    width: 95px;
-    height: 90px;
-    display: inline-block;
+    display:flex;
+    width: 130px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
-    bottom: 5px;
+    bottom: 8px;
 }
 
 
@@ -84,7 +96,7 @@ nav a{
     padding: 10px;
     z-index: 0;
     position: relative;
-    margin-top: 5vw;
+    margin-top: 8vw;
     margin-bottom: 5vw;
     border-radius: 3%;
     
@@ -122,6 +134,7 @@ a {
     font-size: 3vw;
     text-align: center;
     z-index: 10;
+    padding: 3px;
 
 }
 
@@ -150,11 +163,7 @@ a {
     z-index: 1;
 }
 
-.vest1naslov:hover{
-    transform: scale(1.02);
-    position: relative;
-    z-index: 1;
-}
+
 .vest:hover .vest1slika{
     filter:none;
     transform: scale(1.02);
@@ -307,4 +316,36 @@ tbody tr:last-child td:first-child {
 
 tbody tr:last-child th:last-child {
     border-radius: 0 0 10px 0;
+}
+
+
+@media (min-width: 800px) {
+
+    .slika-logo {
+        margin-left: 30px;
+        height: 170px;
+        width: 180px;
+
+    }
+
+    #burger {
+        display: none;
+    }
+    
+.navigacija {
+    height: 50px;
+}
+
+    .hide {
+        display: flex;
+        margin-left: 220px;
+        height: 60px;
+    }
+
+    nav a{
+        display: inline;
+    }
+
+    
+
 }
