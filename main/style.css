@@ -33,7 +33,8 @@ body{
 }
 
 .social {
-    float: right;
+    position: absolute;
+    right: 0;
     margin: 3px;
 }
 
@@ -76,7 +77,6 @@ nav a{
     margin-right: auto;
     position: relative;
     bottom: 8px;
-    left: 6vw;
 }
 
 
@@ -323,7 +323,7 @@ tbody tr:last-child th:last-child {
 @media (min-width: 800px) {
 
     .slika-logo {
-        margin-left: 30px;
+        justify-content: center;
         height: 170px;
         width: 180px;
 
@@ -332,21 +332,35 @@ tbody tr:last-child th:last-child {
     #burger {
         display: none;
     }
+
+    .logo {
+        height: 65px;
+    }
     
-.navigacija {
-    height: 50px;
-}
+    .navigacija{
+        background: #808080;
+        height: 85px;
+    }
 
     .hide {
         display: flex;
-        margin-left: 220px;
-        height: 60px;
+        justify-content: center;
     }
 
     nav a{
+        width: 105px;
         display: inline;
+        border: none;
+        text-align: center;
+        font-size: 21px;
     }
 
-    
+    #tim {
+        margin-right: 80px;
+    }
+
+    #takmicenja {
+        margin-left: 80px;
+    }
 
 }
